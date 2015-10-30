@@ -1,6 +1,6 @@
 {
   "name": "relax-jss",
-  "version": "0.0.0-1",
+  "version": "0.0.0-2",
   "description": "Your JS and CSS laughing together",
   "main": "dist/index.js",
   "scripts": {

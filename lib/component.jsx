@@ -7,13 +7,8 @@ export default class JSS extends Component {
     stylesheet: PropTypes.instanceOf(Stylesheet).isRequired
   }
 
-  componentDidMount () {
-    // jss.on('update', this.onUpdate.bind(this));
-    this.onUpdate();
-  }
-
-  onUpdate () {
-    this.forceUpdate();
+  shouldComponentUpdate (nextProps) {
+    return nextProps.stylesheet.hasUpdated();
   }
 
   render () {
